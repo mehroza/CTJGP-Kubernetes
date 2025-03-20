@@ -72,6 +72,13 @@ exit
 
 
 ## Task 2 : Creating Deployment with emptyDir
+## emptyDir
+In Kubernetes, an emptyDir is a type of volume that is created when a Pod is assigned to a node and is initially empty. The contents of an emptyDir volume are stored on the node's filesystem, and the data exists only for the lifetime of the Pod. When the Pod is deleted, the data in the emptyDir is also deleted.
+
+You can use emptyDir volumes in your Kubernetes Deployment for temporary storage that is specific to the Pod but not persistent across Pod restarts. For example, this is useful when you need a temporary scratch space for your application, such as caches, intermediate files, etc.
+
+Here’s how you can create a Kubernetes Deployment that uses an emptyDir volume.
+
 Create a file named mydep-empty.yaml using content given below
 ```
 vi mydep-empty.yaml
