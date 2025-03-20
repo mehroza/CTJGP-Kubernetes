@@ -60,11 +60,12 @@ Access one of the Pods and view nginx version
 kubectl get pods
 ```
 ```
-Watch for the pods
-kubectl get pods -w
-
-
 kubectl exec -it <pod_name> -- /bin/bash
+```
+```
+Watch for the pods
+```
+kubectl get pods -w
 ```
 ```
 nginx -v
