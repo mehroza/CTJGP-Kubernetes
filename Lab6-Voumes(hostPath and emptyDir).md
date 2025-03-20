@@ -39,7 +39,7 @@ Access shell on a container running in your Pod to verify volume
 kubectl exec -it <pod-name> -- /bin/bash
 ```
 ```
-cd /data
+cd /app
 ```
 ```
 echo "Welcome to DevOps Training" > index.html

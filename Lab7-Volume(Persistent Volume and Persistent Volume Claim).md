@@ -19,7 +19,7 @@ mkdir /pvdir
 ```
 echo Hello World! > /pvdir/index.html
 ```
-
+### On the Jump Server (kops vm)
 ### Task 2: Create a Local Persistent Volume
 ```
 vi pv-volume.yaml
